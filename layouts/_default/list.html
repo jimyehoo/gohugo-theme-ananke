@@ -7,6 +7,9 @@
       {{ range .Paginator.Pages }}
         <div class="relative w-100 w-30-l mb4 bg-white">
           {{ .Render "summary" }}
+          <aside class="w-30-l mt6-l">
+            {{- partial "menu-contextual.html" . -}}
+          </aside>
         </div>
       {{ end }}
     </section>
